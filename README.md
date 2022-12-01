@@ -1,5 +1,6 @@
 # IP-on-RPI
 Image Processing on Raspberry Pi 4 using OpenCV v2 and Python coding on Raspberry Pi 4 Model B:
+
 **What this can do:**
 - This code can perform the following operations:
     1. Smoothen the Image - Using Gaussian Blurring
