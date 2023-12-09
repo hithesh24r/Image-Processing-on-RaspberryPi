@@ -1,4 +1,7 @@
-# importing all the required libraries  
+# Before executing this script, execute "RaspberryPi integration with AWS S3.sh"
+# This makes sure that the directory is synchronized with the S3 Bucket 
+
+# importing all the required libraries
 import cv2
 import os
 import numpy as np
