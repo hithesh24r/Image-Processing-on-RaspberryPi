@@ -10,10 +10,13 @@ os.system("cd /home/pi")
 image_destination = "/home/pi/result/"
 
 # Getting the name of the image file present in the current dircetory mentioned above i.e., /home/pi
-image_name = input("Enter the image name with extension correctly (case-sensitive): ")
+image_name = input("Enter the image name with extension (case-sensitive): ")
 
-image = cv2.imread(image_name)    # reading image into the code using OpenCV
-mkernel = cv2.getStructuringElement(cv2.MORPH_CROSS,(5,5))    # Kernel used for morphological operations like erosion, dilation, opening, closing
+# reading image into the code using OpenCV
+image = cv2.imread(image_name)    
+
+# Kernel used for morphological operations like erosion, dilation, opening, closing
+mkernel = cv2.getStructuringElement(cv2.MORPH_CROSS,(5,5))
 
 # Defining functions for every operation seperately
 def smoothen():
@@ -94,6 +97,6 @@ elif operation == 7:
     closing()
 
 else:
-    print("Enter correct input!!")
+    print("Enter a correct operation!!")
 
 print(f"The image has been processed successfully!! You can find the resultant image at {output_path}")
